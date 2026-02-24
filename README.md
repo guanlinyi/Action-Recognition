@@ -5,25 +5,7 @@ conda create -n action_rec python=3.10.16
 pip install pygame==2.6.1
 
 1. 标注工具action_label_tool.py生成的文件结果如下:
-
-long_video1
-├──ok/
-│  ├── positive/         # 存放所有裁剪出来的正样本动作视频
-│      ├── xxx_P1_A001.mp4
-│      └── ..
-│  ├── negative/         # 存放所有裁剪出来的负样本动作视频
-│      ├── xxx_P2_A002.mp4
-│      └── ...
-├──000000.jpg         # 原始的视频帧
-├──000001.jpg
-├──......
-├──yolo_pose_results.json         # 记录yolo推理结果的文件
-├──yolo_pose_results_stats.json   # 记录yolo推理结果状态的文件
-├──labels_backup.json             # 记录标注工具标注进度的文件
-└── annotations.pkl               # 记录标注信息的文件，可用于转成输入训练的pkl文件
- 
-long_video2同理
-├──...
+<img width="629" height="401" alt="image" src="https://github.com/user-attachments/assets/f1964b3b-7a88-451c-baaa-8f6c587469e8" />
 
 标注工具生成的annotations.pkl格式如下：
 {
