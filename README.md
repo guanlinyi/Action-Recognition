@@ -32,9 +32,9 @@ pip install pygame==2.6.1
         ...... 
      ]
 }
+ 
   
-2.generate_ntu60_pkl.py根据action_label_tool.py生成的annotations.pkl生成可用于训练的my_ntu60_2d.pkl  
-
+2.generate_ntu60_pkl.py根据action_label_tool.py生成的annotations.pkl生成可用于训练的my_ntu60_2d.pkl，格式如下：
 data:{
     'split':{
                  'train': \['frame_dir名称', 'xxx', ...],  
