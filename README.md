@@ -7,8 +7,8 @@
 （4）在conda环境中安装GPU版本的torch和mmaction2环境，可阅读官方文档：https://mmpose.readthedocs.io/zh-cn/latest/installation.html 或者 博客https://blog.csdn.net/shimingwang/article/details/154687372的4.1和4.2  
 （5）然后安装依赖库，关键库：pip install pygame==2.6.1  
 （6）然后下载yolo26s-pose.pt和slowonly_r50_8xb16-u48-240e_ntu60-xsub-keypoint_20220815-38db104b.pth 放到mmaction2/checkpoints  
-     https://docs.ultralytics.com/tasks/pose/#models 下载yolo26s-pose.pt,放到mmaction2\checkpoints， 后面第（4）步动作分类标注工具和第（8）步yolo26pose_PoseC3D.py实时动作识别的代码会加载该模型  
-     https://mmaction2.readthedocs.io/zh-cn/latest/model_zoo/skeleton.html#posec3d 找到NTU60_XSub，下载第一行的ckpt,放到mmaction2\checkpoints。 （后面第（7）步在配置文件slowonly_r50_8xb16-u48-240e_ntu60-xsub-keypoint.py最后一行会加载该模型）  
+（6.1）https://docs.ultralytics.com/tasks/pose/#models 下载yolo26s-pose.pt,放到mmaction2\checkpoints， 后面第（4）步动作分类标注工具和第（8）步yolo26pose_PoseC3D.py实时动作识别的代码会加载该模型  
+（6.2）https://mmaction2.readthedocs.io/zh-cn/latest/model_zoo/skeleton.html#posec3d 找到NTU60_XSub，下载第一行的ckpt,放到mmaction2\checkpoints。 （后面第（7）步在配置文件slowonly_r50_8xb16-u48-240e_ntu60-xsub-keypoint.py最后一行会加载该模型）  
 
 2.脚本使用顺序
  注：脚本提供了从数据转换到数据标注到训练到实时动作识别的指导  
